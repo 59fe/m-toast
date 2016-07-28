@@ -1,0 +1,43 @@
+{
+  "name": "m-toast",
+  "version": "1.0.3",
+  "description": "m-toast 滑片组件,侧边栏、操作表、Popup等等很多场景。可以指定滑入的距离、方向",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/59fe/m-toast.git"
+  },
+  "homepage": "https://github.com/59fe/m-toast",
+  "author": {
+    "name": "半边",
+    "email": "itaofe@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "半边",
+      "email": "itaofe@gmail.com"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/59fe/m-toast/issues"
+  },
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "react": "~15.2.0",
+    "react-dom": "~15.2.0",
+    "m-base": "^1.0.0",
+    "m-mask": "^1.0.0",
+    "classnames": "~2.2.3"
+  },
+  "keywords": [
+    "toast",
+    "react",
+    "mobile"
+  ],
+  "license": "Apache-2.0"
+}
+
+

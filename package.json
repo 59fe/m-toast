@@ -1,7 +1,7 @@
 {
   "name": "m-toast",
   "version": "1.0.3",
-  "description": "m-toast 滑片组件,侧边栏、操作表、Popup等等很多场景。可以指定滑入的距离、方向",
+  "description": "m-toast 移动端全局展示通知提醒信息",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

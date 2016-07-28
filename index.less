@@ -1,0 +1,40 @@
+@import "~m-base/base/mixins";
+@import "~m-base/base/variables";
+@import "~m-mask/index.less";
+
+@toast-prefix: toast;
+@toast-zindex: 20;
+@toast-color: #fff;
+@toast-border-radius: 4;
+@toast-bg-color: rgba(0, 0, 0, .8);
+
+.@{toast-prefix} {
+    text-align: center;
+    color: @toast-color;
+    background-color: @toast-bg-color;
+
+    .font-size(14);
+    .padding(@S3, @S4);
+
+    position: fixed;
+    z-index: @toast-zindex;
+    word-break: break-all;
+
+    top: 38.2%;
+    left: 50%;
+    .max-width(240);
+    .border-radius(@toast-border-radius);
+
+    > i {
+        .font-size(24);
+        display: block;
+        text-align: center;
+    }
+
+    > span {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}

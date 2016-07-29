@@ -1,6 +1,6 @@
 {
   "name": "m-toast",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "m-toast 移动端全局展示通知提醒信息",
   "main": "index.js",
   "scripts": {

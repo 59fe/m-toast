@@ -92,9 +92,11 @@ var Toast = function (_React$Component) {
 
     Toast.prototype.position = function position() {
         var toast_el = this.refs.toast;
+        var viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
 
         toast_el.style.marginTop = '-' + Math.round(toast_el.clientHeight / 2) + 'px';
-        toast_el.style.marginLeft = '-' + Math.round(toast_el.clientWidth / 2) + 'px';
+        //toast_el.style.marginLeft = '-' + Math.round(toast_el.clientWidth / 2) + 'px';
+        toast_el.style.left = (viewportWidth - toast_el.clientWidth) / 2 + 'px';
     };
 
     Toast.prototype.render = function render() {

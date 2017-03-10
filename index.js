@@ -49,7 +49,6 @@ var Toast = function (_React$Component) {
     Toast.show = function show(message) {
         var options = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
 
-
         if (!toast_container) {
             toast_container = document.createElement('div');
             document.body.appendChild(toast_container);
@@ -67,19 +66,11 @@ var Toast = function (_React$Component) {
     };
 
     Toast.prototype.componentDidMount = function componentDidMount() {
-
-        setTimeout(function () {
-            if (toast_container) {
-                _reactDom2.default.unmountComponentAtNode(toast_container);
-            } else {
-                toast_el.remove();
-            }
-        }, this.props.duration);
-
         this.position();
     };
 
     Toast.prototype.componentDidUpdate = function componentDidUpdate() {
+        clearTimeout(Toast.tid)
         this.position();
     };
 
@@ -97,6 +88,14 @@ var Toast = function (_React$Component) {
         toast_el.style.marginTop = '-' + Math.round(toast_el.clientHeight / 2) + 'px';
         //toast_el.style.marginLeft = '-' + Math.round(toast_el.clientWidth / 2) + 'px';
         toast_el.style.left = (viewportWidth - toast_el.clientWidth) / 2 + 'px';
+
+        Toast.tid = setTimeout(function () {
+            if (toast_container) {
+                _reactDom2.default.unmountComponentAtNode(toast_container);
+            } else {
+                toast_el.remove();
+            }
+        }, this.props.duration);
     };
 
     Toast.prototype.render = function render() {

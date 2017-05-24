@@ -13,6 +13,10 @@ var _reactDom = require('react-dom');
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+var _PropTypes = require('prop-types');
+
+var _PropTypes2 = _interopRequireDefault(_PropTypes);
+
 var _classnames = require('classnames');
 
 var _classnames2 = _interopRequireDefault(_classnames);
@@ -134,10 +138,10 @@ var Toast = function (_React$Component) {
 }(_react2.default.Component);
 
 Toast.PropTypes = {
-    zIndex: _react.PropTypes.number,
-    duration: _react.PropTypes.number,
-    markable: _react.PropTypes.bool,
-    message: _react.PropTypes.string
+    zIndex:   _PropTypes2.default.number,
+    duration: _PropTypes2.default.number,
+    markable: _PropTypes2.default.bool,
+    message:  _PropTypes2.default.string
 };
 
 Toast.defaultProps = {

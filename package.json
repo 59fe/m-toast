@@ -1,5 +1,5 @@
 {
-  "name": "m-toast",
+  "name": "qiji-m-toast",
   "version": "1.0.4",
   "description": "m-toast 移动端全局展示通知提醒信息",
   "main": "index.js",
@@ -26,10 +26,11 @@
   },
   "readmeFilename": "README.md",
   "dependencies": {
-    "react": "~15.2.0",
-    "react-dom": "~15.2.0",
+    "react": "~15.5.4",
+    "react-dom": "~15.5.4",
+    "prop-types": "^15.5.8",
     "m-base": "^1.0.0",
-    "m-mask": "^1.0.0",
+    "m-mask": "^1.1.0",
     "classnames": "~2.2.3"
   },
   "keywords": [
